@@ -1,0 +1,313 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>熊愛繪本~親子日語 | 日文</title>
+    <!--title icon-->
+    <link rel="icon" href="/image/favicon.ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/image/favicon.ico.ico" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+            /*計算寬度時 包含padding*/
+        }
+
+        /*清除浮動*/
+        .clearfix {
+            clear: both;
+        }
+
+        /*將youtube影片嵌入RWD(自適應網頁)
+    padding-bottom: 56.25%為影片高度與寬度的比例16:9計算得來，9除以16=0.5625換算高度比0.5625=56.25%
+
+   padding-top: 30px:用於修正的高度，可用25px或30px */
+        .video-container {
+
+            position: relative;
+
+            padding-bottom: 56.25%;
+
+            padding-top: 30px;
+
+            height: 0;
+
+            overflow: hidden;
+
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+
+            height: 100%;
+        }
+
+
+        .index {
+            margin: 0;
+            height: 2000px;
+        }
+
+
+        .home_pg {
+            width: 100%;
+           /* height: calc(100vh - 120px);*/
+        }
+
+        /*#main.fixed{
+        padding-top: 109px;
+         }*/
+        .logo {
+            background-color: #3d4e59;
+            width: 100%;
+
+        }
+
+        .kid {
+            background-color: #d9ebd4;
+            width: 100%;
+
+
+        }
+
+        .navbar{
+            background-color:#f9ceab;
+            width: 100%;
+        }
+
+
+        .nav_items {
+            font-size: 100%;
+            padding: 5px 20px;
+         
+        }
+
+        .link {
+            padding: 15px;
+        }
+
+        .doc_pg {
+            background-color: #fbebe1;
+            width: 100%;
+            background-size: cover;
+            /*height: 2000px;*/
+        }
+
+        .study_b {
+            width: 100%;
+            padding: 1% 15%;
+
+        }
+
+        .youtube {
+            width: 100%;
+            padding: 2% 15%;
+        }
+
+        .study_f {
+            width: 100%;
+
+
+        }
+
+        .news {
+            width: 100%;
+
+        }
+
+        .class_pay {
+            width: 100%;
+
+        }
+
+        .book {
+            width: 100%;
+
+        }
+
+        .notics {
+            width: 100%;
+
+        }
+
+        .link_1 {
+            width: 100%;
+
+        }
+
+        .title {
+            font-size: 100%;
+        }
+
+        .fb {
+            float: left;
+        }
+
+        .ig {
+            float: left;
+         
+           
+        }
+
+        .line {
+            float: left;    
+        }
+      .pchome{
+          padding:2% 5%;
+      }
+      .shoop{
+          padding: 2% 5%;
+      }
+      #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 5%;
+        }
+    #nav_btn{
+        padding: 0% ;
+    }
+
+        
+    </style>
+</head>
+<body class="index">
+    <div class="home_pg">
+        <div class="logo">
+            <img src="/image/bear.png" alt="bear" width="5%">
+        </div>
+        <div class="kid">
+            <img src="/image/kid.png" alt="kid" style="display:block; margin:auto;" width="50%"><!-- 圖片在div內置中  -->
+            <!-- <img src="圖片網址" style="float:left;"/> (圖片置左)
+        <img src="圖片網址" style="float:right;"/> (圖片置右)-->
+
+        </div>
+        <nav class="navbar">
+           
+            <div class="nav_items">
+                <a href="#section_1"><img src="/image/nav-2.png" border="0" title="教學理念" width="10%"></a>
+            
+                <a href="#section_2">教學影片</a>
+                <a href="#section_3">教學花絮</a>
+                <a href="#section_4">最新消息</a>
+                <a  href="#section_5">課程報名</a>
+                <a href="#section_6">書藉訂購</a>
+                <a href="#section_7">聯絡我們</a>
+                <a href="#section_8">相關連結</a>   
+            </div>
+            
+        </nav>
+    </div>
+    <div class="doc_pg">
+        <div  id="section_1" class="study_b">
+            <h1 class="title">教學理念</h1>
+            <p class="doc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti pariatur sunt libero
+                fuga, impedit porro nulla velit soluta, vero alias eveniet ipsam! Consequuntur mollitia provident quod,
+                adipisci dicta in quibusdam?
+            </p>
+        </div>
+
+        <div  id="section_2" class="youtube">
+            <h1 class="title">教學影片</h1>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/p_kH1grc2ss" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen >
+                </iframe>
+            </div>
+
+
+            <div  id="section_3" class="study_f">
+                <h1 class="title">教學花絮</h1>
+            </div>
+            <div  id="section_4" class="news">
+                <h1 class="title">最新消息</h1>
+                <p class="doc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum assumenda iure.
+                    Necessitatibus dignissimos tenetur quasi blanditiis maiores quisquam praesentium odio esse
+                    aspernatur libero, neque magnam eveniet rem vel eius!
+                </p>
+            </div>
+            <div  id="section_5" class="class_pay">
+                <h1 class="title">課程報名</h1>
+                <p class="doc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda facere eveniet
+                    obcaecati illo natus eaque. Doloribus excepturi, placeat ipsam, voluptatibus ratione maxime ad non
+                    tempora libero sequi, fuga et aspernatur?
+                </p>
+            </div>
+            <div id="section_6" class="book">
+                <h1 class="title">書籍訂購</h1>
+                <div class="pchome">
+                    <a href="http://seller.pcstore.com.tw/S135534997/" title="pchome"><img src="/image/pchome.jpg" alt="pchome" width="15%"></a> <!-- img 圖片超連結-->
+                </div>
+                <div class="shoop">
+                    <a href="https://shopee.tw/cindy1915" title="蝦皮"><img src="/image/shoop.jpg" alt="蝦皮" width="15%"></a>
+                </div>
+
+
+            </div>
+            <div id="section_7" class="notice">
+                <h1 class="title">聯絡我們</h1>
+                <p class="doc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, aliquam. Laboriosam,
+                    quis impedit, quod sunt nisi, tempora at consequuntur hic amet mollitia ducimus architecto
+                    reprehenderit numquam commodi exercitationem unde! Eligendi.
+                </p>
+            </div>
+            <div id="section_8" class="link_1">
+                <h1 class="title">相關連結</h1>
+                <div class="fb">
+                    <img src="/image/fb qr.png" alt="FB" width="70%">
+                </div>
+
+                <div class="ig">
+                    <img src="/image/ig qr.png" alt="IG" width="48%">
+                </div>
+                <div class="line">
+                    <img src="/image/lin qr.png" alt="Line" width="95%">
+                </div>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="/image/top.png" alt="Go to top" width="120%">
+
+            </button>
+        </div>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+    
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    
+
+</body>
+
+</html>
