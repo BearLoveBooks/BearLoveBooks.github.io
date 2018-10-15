@@ -51,6 +51,57 @@
             height: 100%;
         }
 
+/*自動隱藏超出長寬的圖片*/
+.nav_items  {
+ overflow: hidden;
+ }
+
+/*轉場的時間*/
+ .nav_items img {
+ transition: all 0.5s ease 0s;
+ }
+
+/*判斷滑鼠的動作放大圖片還有增加透明度*/
+ .nav_items img:hover {
+ -moz-transform: scale(1.05);
+ -ms-transform: scale(1.05);
+ -o-transform: scale(1.05);
+ -webkit-transform: scale(1.05);
+ transform: scale(1.05);
+ opacity: .5;
+ }
+ /*浮動式自訂連結區塊 - CSS*/
+ #MyFB{
+
+position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+
+top: 75%;  /*設置垂直位置*/
+
+right: -138px;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+
+/*background: #ffffff;  /*背景顏色*/
+
+/*padding: 10px 10px;*/
+
+/*border-radius: 10px;  /*圓角*/
+
+-moz-border-radius: 10px;
+
+-webkit-border-radius: 10px;
+
+}
+
+#MyBlog:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
+
+right: -10px;
+
+}
+
+#MyBlog #title{
+
+padding-right: 5px;  /*讓標題與連結中間有空隙*/
+
+}
 
         .index {
             margin: 0;
@@ -63,14 +114,13 @@
            /* height: calc(100vh - 120px);*/
         }
 
-        /*#main.fixed{
-        padding-top: 109px;
-         }*/
+     
         .logo {
             background-color: #3d4e59;
             width: 100%;
 
         }
+    
 
         .kid {
             background-color: #d9ebd4;
@@ -78,19 +128,15 @@
 
 
         }
-
-        .navbar{
-            background-color:#3d4e59;
-            width: 100%;
-        }
-
+.logo_bear{
+    padding: 1% 0% 0% 1%;
+}
 
         .nav_items {
-            /*font-size: 100%;*/
-            padding: 0px 20px;
+               padding: 0% 15%;
             text-align: center;
-         
-        }
+
+           }
 
         .link {
             padding: 15px;
@@ -181,13 +227,26 @@
             width: 5%;
         }
   
-        
+    
     </style>
 </head>
 <body class="index">
     <div class="home_pg">
         <div class="logo">
-            <img src="/image/bear.png" alt="bear" width="5%">
+            <div class="logo_bear">
+                 <img src="/image/logo.png" alt="bear" width="10%">
+            </div>
+          
+
+                <div class="nav_items">
+                    <a href="#section_1"><img src="/image/nav-21.png" border="0" title="教學理念" width="10%"></a>
+                    <a href="#section_2"><img src="/image/nav-31.png" border="0" title="教學影片" width="9%"></a>
+                    <a href="#section_3"><img src="/image/nav-23.png" border="0" title="課程報名" width="10%"></a>
+                    <a href="#section_4"><img src="/image/nav-24.png" border="0" title="聯絡我們" width="9%"></a>                   
+                </div>
+                
+        
+            
         </div>
         <div class="kid">
             <img src="/image/kid.png" alt="kid" style="display:block; margin:auto;" width="50%"><!-- 圖片在div內置中  -->
@@ -195,21 +254,7 @@
         <img src="圖片網址" style="float:right;"/> (圖片置右)-->
 
         </div>
-        <nav class="navbar">
-           
-            <div class="nav_items">
-                <a href="#section_1"><img src="/image/nav-21.png" border="0" title="教學理念" width="10%"></a>
-                <a href="#section_2"><img src="/image/nav-31.png" border="0" title="教學影片" width="9%"></a>
-                <a href="#section_3"><img src="/image/nav-22.png" border="0" title="教學花絮" width="10%"></a>
-                <a href="#section_4"><img src="/image/nav-32.png" border="0" title="最新消息" width="9%"></a>
-                <a href="#section_5"><img src="/image/nav-23.png" border="0" title="課程報名" width="10%"></a>
-                <a href="#section_6"><img src="/image/nav-33.png" border="0" title="書藉訂購" width="9%"></a>
-                <a href="#section_7"><img src="/image/nav-24.png" border="0" title="聯絡我們" width="10%"></a>
-                <a href="#section_8"><img src="/image/nav-34.png" border="0" title="相關連結" width="9%"></a>
-                
-            </div>
-            
-        </nav>
+        
     </div>
     <div class="doc_pg">
         <div  id="section_1" class="study_b">
@@ -285,6 +330,12 @@
             <img src="/image/top.png" alt="Go to top" width="120%">
 
             </button>
+           <!--浮動式自訂連結區塊 - HTML-->
+           <div id="MyFB">
+                <a href="https://zh-tw.facebook.com/pages/category/Product-Service/%E7%86%8A%E6%84%9B%E6%B4%8B%E8%A3%81%E7%B7%A8%E7%B9%94-2008721729198092/">
+                    <img src="/image/fb.png" alt="FB" width="30%"></a>
+                
+            </div>
         </div>
         <script>
             // When the user scrolls down 20px from the top of the document, show the button
