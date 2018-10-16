@@ -77,7 +77,7 @@
         #MyFB {
 
             position: fixed;
-            
+
             /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
 
             top: 75%;
@@ -97,9 +97,6 @@
         }
 
 
-
-
-
         .index {
             margin: 0;
         }
@@ -107,7 +104,7 @@
 
         .home_pg {
             width: 100%;
-         
+
         }
 
 
@@ -126,7 +123,19 @@
         }
 
         .logo_bear {
-            padding: 1% 0% 0% 1%;
+            padding: 0% 1%;
+        }
+
+        #box_relative{
+            position: relative;
+
+
+
+        }
+        #box_absolute{
+            position: absolute;
+            top:10%;
+
         }
 
         .nav_items {
@@ -263,21 +272,20 @@
 
 <body class="index">
     <div class="home_pg">
-        <div class="logo">
-            <div class="logo_bear">
-                <img src="/image/logo.png" alt="bear" width="10%">
+        <div id="box_relative" class="logo">
+            <div id="box_absolute" class="logo_bear">
+                <img src="/image/logo.png" alt="bear" width="20%">
+                <!-- <div class="clearfix"></div> 清除浮動-->
             </div>
 
-
-            <div class="nav_items">
-                <a href="#section_1"><img src="/image/nav-21.png" border="0" title="教學理念" width="10%"></a>
-                <a href="#section_2"><img src="/image/nav-31.png" border="0" title="教學影片" width="9%"></a>
-                <a href="#section_3"><img src="/image/nav-23.png" border="0" title="課程報名" width="10%"></a>
-                <a href="#section_4"><img src="/image/nav-24.png" border="0" title="聯絡我們" width="9%"></a>
+            <div class="box_flex">
+                <div class="nav_items">
+                    <a href="#section_1"><img src="/image/nav-21.png" border="0" title="教學理念" width="10%"></a>
+                    <a href="#section_2"><img src="/image/nav-31.png" border="0" title="教學影片" width="9%"></a>
+                    <a href="#section_3"><img src="/image/nav-23.png" border="0" title="課程報名" width="10%"></a>
+                    <a href="#section_4"><img src="/image/nav-24.png" border="0" title="聯絡我們" width="9%"></a>
+                </div>
             </div>
-
-
-
         </div>
 
         <!-- Swiper -->
@@ -397,7 +405,7 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-        
+
         // swiper slider
         var swiper = new Swiper('#main_swiper', {
             pagination: {
