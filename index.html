@@ -246,6 +246,7 @@
         .swiper-slide {
             text-align: center;
             height: 75vh;
+
         }
 
         .swiper-slide img {
@@ -324,35 +325,38 @@
 
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-
-    </div>
-    <div class="doc_pg">
-        <div id="section_1" class="study_b">
-            <h1 class="title">教學理念</h1>
-            <p class="doc">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti pariatur sunt libero
-                fuga, impedit porro nulla velit soluta, vero alias eveniet ipsam! Consequuntur mollitia provident quod,
-                adipisci dicta in quibusdam?
-            </p>
-        </div>
-
-        <div id="section_2" class="youtube">
-            <h1 class="title">教學影片</h1>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/p_kH1grc2ss" frameborder="0" allow="autoplay; encrypted-media"
-                    allowfullscreen>
-                </iframe>
-            </div>
-            <div id="section_3" class="class_pay">
-                <h1 class="title">課程報名</h1>
+        <div class="doc_pg">
+            <div id="section_1" class="study_b">
+                <h1 class="title">教學理念</h1>
                 <p class="doc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda facere eveniet
-                    obcaecati illo natus eaque. Doloribus excepturi, placeat ipsam, voluptatibus ratione maxime ad non
-                    tempora libero sequi, fuga et aspernatur?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti pariatur sunt libero
+                    fuga, impedit porro nulla velit soluta, vero alias eveniet ipsam! Consequuntur mollitia provident
+                    quod,
+                    adipisci dicta in quibusdam?
                 </p>
             </div>
-            <!--<div id="section_6" class="book">
+
+            <div id="section_2" class="youtube">
+                <h1 class="title">教學影片</h1>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/p_kH1grc2ss" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                </div>
+                <div id="section_3" class="class_pay">
+                    <h1 class="title">課程報名</h1>
+                    <p class="doc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda facere eveniet
+                        obcaecati illo natus eaque. Doloribus excepturi, placeat ipsam, voluptatibus ratione maxime ad
+                        non
+                        tempora libero sequi, fuga et aspernatur?
+                    </p>
+                </div>
+                <!--<div id="section_6" class="book">
                 <h1 class="title">書籍訂購</h1>
                 <div class="pchome">
                     <a href="http://seller.pcstore.com.tw/S135534997/" title="pchome"><img src="/image/pchome.jpg" alt="pchome"
@@ -361,15 +365,15 @@
                 <div class="shoop">
                     <a href="https://shopee.tw/cindy1915" title="蝦皮"><img src="/image/shoop.jpg" alt="蝦皮" width="15%"></a>
                 </div>-->
-            <div id="section_4" class="notice">
-                <h1 class="title">聯絡我們</h1>
-                <p class="doc">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, aliquam. Laboriosam,
-                    quis impedit, quod sunt nisi, tempora at consequuntur hic amet mollitia ducimus architecto
-                    reprehenderit numquam commodi exercitationem unde! Eligendi.
-                </p>
-            </div>
-            <!--<div id="section_8" class="link_1">
+                <div id="section_4" class="notice">
+                    <h1 class="title">聯絡我們</h1>
+                    <p class="doc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, aliquam. Laboriosam,
+                        quis impedit, quod sunt nisi, tempora at consequuntur hic amet mollitia ducimus architecto
+                        reprehenderit numquam commodi exercitationem unde! Eligendi.
+                    </p>
+                </div>
+                <!--<div id="section_8" class="link_1">
                 <h1 class="title">相關連結</h1>
                 <div class="fb">
                     <img src="/image/fb qr.png" alt="FB" width="70%">
@@ -382,45 +386,56 @@
                     <img src="/image/lin qr.png" alt="Line" width="95%">
                 </div>
             </div>-->
-            <button onclick="topFunction()" id="myBtn" title="Back to top">
-                <img src="/image/top.png" alt="Go to top" width="100%">
+                <button onclick="topFunction()" id="myBtn" title="Back to top">
+                    <img src="/image/top.png" alt="Go to top" width="100%">
 
-            </button>
-            <!--浮動式自訂連結區塊 - HTML-->
-            <div id="MyFB">
-                <a href="https://zh-tw.facebook.com/pages/category/Product-Service/%E7%86%8A%E6%84%9B%E6%B4%8B%E8%A3%81%E7%B7%A8%E7%B9%94-2008721729198092/">
-                    <img src="/image/fb.png" alt="FB" width="20%"></a>
+                </button>
+                <!--浮動式自訂連結區塊 - HTML-->
+                <div id="MyFB">
+                    <a href="https://zh-tw.facebook.com/pages/category/Product-Service/%E7%86%8A%E6%84%9B%E6%B4%8B%E8%A3%81%E7%B7%A8%E7%B9%94-2008721729198092/">
+                        <img src="/image/fb.png" alt="FB" width="20%"></a>
 
+                </div>
             </div>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+            <!-- Swiper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 
-        <script>
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function () { scrollFunction() };
+            <script>
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function () { scrollFunction() };
 
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("myBtn").style.display = "block";
-                } else {
-                    document.getElementById("myBtn").style.display = "none";
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("myBtn").style.display = "block";
+                    } else {
+                        document.getElementById("myBtn").style.display = "none";
+                    }
                 }
-            }
 
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
 
-            // swiper slider
-            var swiper = new Swiper('#main_swiper', {
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                },
-            });
-        </script>
+                //  <!-- Initialize Swiper --> swiper slider
+                var swiper = new Swiper('.swiper-container', {
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
 
 
 </body>
