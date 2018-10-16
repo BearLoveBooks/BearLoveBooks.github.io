@@ -80,7 +80,7 @@
 
             /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
 
-            top: 75%;
+            top: 90%;
             /*設置垂直位置*/
 
             right: -190px;
@@ -126,15 +126,16 @@
             padding: 0% 1%;
         }
 
-        #box_relative{
+        #box_relative {
             position: relative;
 
 
 
         }
-        #box_absolute{
+
+        #box_absolute {
             position: absolute;
-            top:10%;
+            top: 10%;
 
         }
 
@@ -227,7 +228,7 @@
             display: none;
             position: fixed;
             bottom: 20px;
-            right: 30px;
+            right: 70px;
             z-index: 99;
             border: none;
             outline: none;
@@ -237,6 +238,7 @@
         }
 
         .swiper-container {
+            background-image: url('/image/bg.jpg');
             background-size: cover;
             height: 75vh;
         }
@@ -254,16 +256,16 @@
         @media (max-width:760px) {
             .swiper-container {
                 background-size: cover;
-                height: 25vh;
+                height: 20vh;
             }
 
             .swiper-slide {
                 text-align: center;
-                height: 25vh;
+                height: 20vh;
             }
 
             .swiper-slide img {
-                height: 25vh;
+                height: 20vh;
             }
 
         }
@@ -278,34 +280,33 @@
                 <!-- <div class="clearfix"></div> 清除浮動-->
             </div>
 
-            <div class="box_flex">
-                <div class="nav_items">
-                    <a href="#section_1"><img src="/image/nav-21.png" border="0" title="教學理念" width="10%"></a>
-                    <a href="#section_2"><img src="/image/nav-31.png" border="0" title="教學影片" width="9%"></a>
-                    <a href="#section_3"><img src="/image/nav-23.png" border="0" title="課程報名" width="10%"></a>
-                    <a href="#section_4"><img src="/image/nav-24.png" border="0" title="聯絡我們" width="9%"></a>
-                </div>
+
+            <div class="nav_items">
+                <a href="#section_1"><img src="/image/nav-21.png" border="0" title="教學理念" width="10%"></a>
+                <a href="#section_2"><img src="/image/nav-31.png" border="0" title="教學影片" width="9%"></a>
+                <a href="#section_3"><img src="/image/nav-23.png" border="0" title="課程報名" width="10%"></a>
+                <a href="#section_4"><img src="/image/nav-24.png" border="0" title="聯絡我們" width="9%"></a>
             </div>
         </div>
 
         <!-- Swiper輪播 -->
         <div id="main_swiper" class="swiper-container">
             <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                            <img src="/image/5ac63a5f7b26a139a4d4ba5e589dfdf5_m.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                                <img src="/image/ANJ77_ehonwomiru20141115105326_TP_V.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                    <img src="/image/0903c7a724e7fc4793431245cf0f6ccb_m.jpg" alt="">
-                                </div>
+                <div class="swiper-slide">
+                    <img src="/image/5ac63a5f7b26a139a4d4ba5e589dfdf5_m.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/ANJ77_ehonwomiru20141115105326_TP_V.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/0903c7a724e7fc4793431245cf0f6ccb_m.jpg" alt="">
+                </div>
                 <div class="swiper-slide">
                     <img src="/image/e31dcb431e2d64b6b62559dba98d67f3_s.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                        <img src="/image/fc31becbe89bad61ec929c40becdeb56_s.jpg" alt="">
-                    </div>
+                    <img src="/image/fc31becbe89bad61ec929c40becdeb56_s.jpg" alt="">
+                </div>
                 <div class="swiper-slide">
                     <img src="/image/child-2553539_1280.jpg" alt="">
                 </div>
@@ -343,9 +344,6 @@
                     allowfullscreen>
                 </iframe>
             </div>
-
-
-
             <div id="section_3" class="class_pay">
                 <h1 class="title">課程報名</h1>
                 <p class="doc">
@@ -363,18 +361,15 @@
                 <div class="shoop">
                     <a href="https://shopee.tw/cindy1915" title="蝦皮"><img src="/image/shoop.jpg" alt="蝦皮" width="15%"></a>
                 </div>-->
-
-
-        </div>
-        <div id="section_4" class="notice">
-            <h1 class="title">聯絡我們</h1>
-            <p class="doc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, aliquam. Laboriosam,
-                quis impedit, quod sunt nisi, tempora at consequuntur hic amet mollitia ducimus architecto
-                reprehenderit numquam commodi exercitationem unde! Eligendi.
-            </p>
-        </div>
-        <!--<div id="section_8" class="link_1">
+            <div id="section_4" class="notice">
+                <h1 class="title">聯絡我們</h1>
+                <p class="doc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, aliquam. Laboriosam,
+                    quis impedit, quod sunt nisi, tempora at consequuntur hic amet mollitia ducimus architecto
+                    reprehenderit numquam commodi exercitationem unde! Eligendi.
+                </p>
+            </div>
+            <!--<div id="section_8" class="link_1">
                 <h1 class="title">相關連結</h1>
                 <div class="fb">
                     <img src="/image/fb qr.png" alt="FB" width="70%">
@@ -387,45 +382,45 @@
                     <img src="/image/lin qr.png" alt="Line" width="95%">
                 </div>
             </div>-->
-        <button onclick="topFunction()" id="myBtn" title="Back to top">
-            <img src="/image/top.png" alt="Go to top" width="120%">
+            <button onclick="topFunction()" id="myBtn" title="Back to top">
+                <img src="/image/top.png" alt="Go to top" width="100%">
 
-        </button>
-        <!--浮動式自訂連結區塊 - HTML-->
-        <div id="MyFB">
-            <a href="https://zh-tw.facebook.com/pages/category/Product-Service/%E7%86%8A%E6%84%9B%E6%B4%8B%E8%A3%81%E7%B7%A8%E7%B9%94-2008721729198092/">
-                <img src="/image/fb.png" alt="FB" width="20%"></a>
+            </button>
+            <!--浮動式自訂連結區塊 - HTML-->
+            <div id="MyFB">
+                <a href="https://zh-tw.facebook.com/pages/category/Product-Service/%E7%86%8A%E6%84%9B%E6%B4%8B%E8%A3%81%E7%B7%A8%E7%B9%94-2008721729198092/">
+                    <img src="/image/fb.png" alt="FB" width="20%"></a>
 
+            </div>
         </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 
-    <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
             }
-        }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
 
-        // swiper slider
-        var swiper = new Swiper('#main_swiper', {
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true
-            },
-        });
-    </script>
+            // swiper slider
+            var swiper = new Swiper('#main_swiper', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+            });
+        </script>
 
 
 </body>
