@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>熊愛繪本~親子日語 | 日文</title>
+    <!--載入swiper-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
     <!--title icon-->
     <link rel="icon" href="/image/favicon.ico.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/image/favicon.ico.ico" type="image/x-icon">
@@ -51,76 +53,70 @@
             height: 100%;
         }
 
-/*自動隱藏超出長寬的圖片*/
-.nav_items  {
- overflow: hidden;
- }
+        /*自動隱藏超出長寬的圖片*/
+        .nav_items {
+            overflow: hidden;
+        }
 
-/*轉場的時間*/
- .nav_items img {
- transition: all 0.5s ease 0s;
- }
+        /*轉場的時間*/
+        .nav_items img {
+            transition: all 0.5s ease 0s;
+        }
 
-/*判斷滑鼠的動作放大圖片還有增加透明度*/
- .nav_items img:hover {
- -moz-transform: scale(1.05);
- -ms-transform: scale(1.05);
- -o-transform: scale(1.05);
- -webkit-transform: scale(1.05);
- transform: scale(1.05);
- opacity: .5;
- }
- /*浮動式自訂連結區塊 - CSS*/
- #MyFB{
+        /*判斷滑鼠的動作放大圖片還有增加透明度*/
+        .nav_items img:hover {
+            -moz-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            opacity: .5;
+        }
 
-position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+        /*浮動式自訂連結區塊 - CSS*/
+        #MyFB {
 
-top: 75%;  /*設置垂直位置*/
+            position: fixed;
+            
+            /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
 
-right: -138px;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+            top: 75%;
+            /*設置垂直位置*/
 
-/*background: #ffffff;  /*背景顏色*/
+            right: -190px;
+            /*設置水平位置，依所放的內容多寡需要自行手動調整*/
 
-/*padding: 10px 10px;*/
+            /*background: #ffffff;  /*背景顏色*/
 
-/*border-radius: 10px;  /*圓角*/
+            /*padding: 10px 10px;*/
 
--moz-border-radius: 10px;
+            /*border-radius: 10px;  /*圓角*/
 
--webkit-border-radius: 10px;
 
-}
 
-#MyBlog:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
+        }
 
-right: -10px;
 
-}
 
-#MyBlog #title{
 
-padding-right: 5px;  /*讓標題與連結中間有空隙*/
-
-}
 
         .index {
             margin: 0;
-            height: 2000px;
         }
 
 
         .home_pg {
             width: 100%;
-           /* height: calc(100vh - 120px);*/
+         
         }
 
-     
+
         .logo {
             background-color: #3d4e59;
             width: 100%;
 
         }
-    
+
 
         .kid {
             background-color: #d9ebd4;
@@ -128,15 +124,16 @@ padding-right: 5px;  /*讓標題與連結中間有空隙*/
 
 
         }
-.logo_bear{
-    padding: 1% 0% 0% 1%;
-}
+
+        .logo_bear {
+            padding: 1% 0% 0% 1%;
+        }
 
         .nav_items {
-               padding: 0% 15%;
+            padding: 0% 15%;
             text-align: center;
 
-           }
+        }
 
         .link {
             padding: 15px;
@@ -201,20 +198,23 @@ padding-right: 5px;  /*讓標題與連結中間有空隙*/
 
         .ig {
             float: left;
-         
-           
+
+
         }
 
         .line {
-            float: left;    
+            float: left;
         }
-      .pchome{
-          padding:2% 5%;
-      }
-      .shoop{
-          padding: 2% 5%;
-      }
-      #myBtn {
+
+        .pchome {
+            padding: 2% 5%;
+        }
+
+        .shoop {
+            padding: 2% 5%;
+        }
+
+        #myBtn {
             display: none;
             position: fixed;
             bottom: 20px;
@@ -226,38 +226,88 @@ padding-right: 5px;  /*讓標題與連結中間有空隙*/
             border-radius: 4px;
             width: 5%;
         }
-  
-    
+
+        .swiper-container {
+            background-size: cover;
+            height: 75vh;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            height: 75vh;
+        }
+
+        .swiper-slide img {
+            height: 75vh;
+        }
+
+        /*手機版*/
+        @media (max-width:760px) {
+            .swiper-container {
+                background-size: cover;
+                height: 25vh;
+            }
+
+            .swiper-slide {
+                text-align: center;
+                height: 25vh;
+            }
+
+            .swiper-slide img {
+                height: 25vh;
+            }
+
+        }
     </style>
 </head>
+
 <body class="index">
     <div class="home_pg">
         <div class="logo">
             <div class="logo_bear">
-                 <img src="/image/logo.png" alt="bear" width="10%">
+                <img src="/image/logo.png" alt="bear" width="10%">
             </div>
-          
 
-                <div class="nav_items">
-                    <a href="#section_1"><img src="/image/nav-21.png" border="0" title="教學理念" width="10%"></a>
-                    <a href="#section_2"><img src="/image/nav-31.png" border="0" title="教學影片" width="9%"></a>
-                    <a href="#section_3"><img src="/image/nav-23.png" border="0" title="課程報名" width="10%"></a>
-                    <a href="#section_4"><img src="/image/nav-24.png" border="0" title="聯絡我們" width="9%"></a>                   
+
+            <div class="nav_items">
+                <a href="#section_1"><img src="/image/nav-21.png" border="0" title="教學理念" width="10%"></a>
+                <a href="#section_2"><img src="/image/nav-31.png" border="0" title="教學影片" width="9%"></a>
+                <a href="#section_3"><img src="/image/nav-23.png" border="0" title="課程報名" width="10%"></a>
+                <a href="#section_4"><img src="/image/nav-24.png" border="0" title="聯絡我們" width="9%"></a>
+            </div>
+
+
+
+        </div>
+
+        <!-- Swiper -->
+        <div id="main_swiper" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/image/e31dcb431e2d64b6b62559dba98d67f3_s.jpg" alt="">
                 </div>
-                
-        
-            
-        </div>
-        <div class="kid">
-            <img src="/image/kid.png" alt="kid" style="display:block; margin:auto;" width="50%"><!-- 圖片在div內置中  -->
-            <!-- <img src="圖片網址" style="float:left;"/> (圖片置左)
-        <img src="圖片網址" style="float:right;"/> (圖片置右)-->
+                <div class="swiper-slide">
+                    <img src="/image/child-2553539_1280.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/baby-1261777_1920.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/oekaki-2009817_1280.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/kid-3659954_1280.jpg" alt="">
+                </div>
 
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-        
+
     </div>
     <div class="doc_pg">
-        <div  id="section_1" class="study_b">
+        <div id="section_1" class="study_b">
             <h1 class="title">教學理念</h1>
             <p class="doc">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti pariatur sunt libero
@@ -266,27 +316,17 @@ padding-right: 5px;  /*讓標題與連結中間有空隙*/
             </p>
         </div>
 
-        <div  id="section_2" class="youtube">
+        <div id="section_2" class="youtube">
             <h1 class="title">教學影片</h1>
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/p_kH1grc2ss" frameborder="0" allow="autoplay; encrypted-media"
-                    allowfullscreen >
+                    allowfullscreen>
                 </iframe>
             </div>
 
 
-            <div  id="section_3" class="study_f">
-                <h1 class="title">教學花絮</h1>
-            </div>
-            <div  id="section_4" class="news">
-                <h1 class="title">最新消息</h1>
-                <p class="doc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum assumenda iure.
-                    Necessitatibus dignissimos tenetur quasi blanditiis maiores quisquam praesentium odio esse
-                    aspernatur libero, neque magnam eveniet rem vel eius!
-                </p>
-            </div>
-            <div  id="section_5" class="class_pay">
+
+            <div id="section_3" class="class_pay">
                 <h1 class="title">課程報名</h1>
                 <p class="doc">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda facere eveniet
@@ -294,26 +334,27 @@ padding-right: 5px;  /*讓標題與連結中間有空隙*/
                     tempora libero sequi, fuga et aspernatur?
                 </p>
             </div>
-            <div id="section_6" class="book">
+            <!--<div id="section_6" class="book">
                 <h1 class="title">書籍訂購</h1>
                 <div class="pchome">
-                    <a href="http://seller.pcstore.com.tw/S135534997/" title="pchome"><img src="/image/pchome.jpg" alt="pchome" width="15%"></a> <!-- img 圖片超連結-->
+                    <a href="http://seller.pcstore.com.tw/S135534997/" title="pchome"><img src="/image/pchome.jpg" alt="pchome"
+                            width="15%"></a> img 圖片超連結
                 </div>
                 <div class="shoop">
                     <a href="https://shopee.tw/cindy1915" title="蝦皮"><img src="/image/shoop.jpg" alt="蝦皮" width="15%"></a>
-                </div>
+                </div>-->
 
 
-            </div>
-            <div id="section_7" class="notice">
-                <h1 class="title">聯絡我們</h1>
-                <p class="doc">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, aliquam. Laboriosam,
-                    quis impedit, quod sunt nisi, tempora at consequuntur hic amet mollitia ducimus architecto
-                    reprehenderit numquam commodi exercitationem unde! Eligendi.
-                </p>
-            </div>
-            <div id="section_8" class="link_1">
+        </div>
+        <div id="section_4" class="notice">
+            <h1 class="title">聯絡我們</h1>
+            <p class="doc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, aliquam. Laboriosam,
+                quis impedit, quod sunt nisi, tempora at consequuntur hic amet mollitia ducimus architecto
+                reprehenderit numquam commodi exercitationem unde! Eligendi.
+            </p>
+        </div>
+        <!--<div id="section_8" class="link_1">
                 <h1 class="title">相關連結</h1>
                 <div class="fb">
                     <img src="/image/fb qr.png" alt="FB" width="70%">
@@ -325,37 +366,47 @@ padding-right: 5px;  /*讓標題與連結中間有空隙*/
                 <div class="line">
                     <img src="/image/lin qr.png" alt="Line" width="95%">
                 </div>
-            </div>
-            <button onclick="topFunction()" id="myBtn" title="Back to top">
+            </div>-->
+        <button onclick="topFunction()" id="myBtn" title="Back to top">
             <img src="/image/top.png" alt="Go to top" width="120%">
 
-            </button>
-           <!--浮動式自訂連結區塊 - HTML-->
-           <div id="MyFB">
-                <a href="https://zh-tw.facebook.com/pages/category/Product-Service/%E7%86%8A%E6%84%9B%E6%B4%8B%E8%A3%81%E7%B7%A8%E7%B9%94-2008721729198092/">
-                    <img src="/image/fb.png" alt="FB" width="30%"></a>
-                
-            </div>
+        </button>
+        <!--浮動式自訂連結區塊 - HTML-->
+        <div id="MyFB">
+            <a href="https://zh-tw.facebook.com/pages/category/Product-Service/%E7%86%8A%E6%84%9B%E6%B4%8B%E8%A3%81%E7%B7%A8%E7%B9%94-2008721729198092/">
+                <img src="/image/fb.png" alt="FB" width="20%"></a>
+
         </div>
-        <script>
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function () { scrollFunction() };
-    
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("myBtn").style.display = "block";
-                } else {
-                    document.getElementById("myBtn").style.display = "none";
-                }
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
             }
-    
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
-    
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        
+        // swiper slider
+        var swiper = new Swiper('#main_swiper', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+        });
+    </script>
+
 
 </body>
 
