@@ -129,6 +129,10 @@
             padding: 0% 1%;
         }
 
+        .logo_bear img {
+            width: 100%;
+        }
+
         #box_relative {
 
             position: relative;
@@ -142,12 +146,18 @@
         #box_absolute {
             position: absolute;
             top: 10%;
+            width: 30%;
 
         }
+
         .nav_items {
             padding: 0% 15%;
             text-align: center;
 
+        }
+
+        .nav_items img {
+            width: 10%;
         }
 
         .animals {
@@ -155,10 +165,31 @@
             width: 100%;
             text-align: center;
 
+
         }
 
         .animals img {
             width: 33%;
+        }
+
+        #section {
+            width: 100%;
+            height: 140px;
+        }
+
+        #section_2_1 {
+            width: 100%;
+            height: 100px;
+        }
+
+        #section_3_1 {
+            width: 100%;
+            height: 100px;
+        }
+
+        #section_4_1 {
+            width: 100%;
+            height: 140px;
         }
 
         .link {
@@ -169,7 +200,7 @@
             background-color: #fbebe1;
             width: 100%;
             background-size: cover;
-            /*height: 2000px;*/
+
         }
 
         .study_b {
@@ -251,11 +282,13 @@
             cursor: pointer;
             border-radius: 4px;
             width: 8%;
-           
+
         }
-#myBtn img{
-    width: 1%;
-}
+
+        #myBtn img {
+            width: 1%;
+        }
+
         #myBtn img {
             width: 100%;
         }
@@ -280,10 +313,14 @@
             height: 75vh;
 
         }
-
+.footer{
+    background-color: #3d4e59;
+    width: 100%;
+    height: 10%;
+}
 
         /*手機版*/
-        @media (max-width:760px) {
+        @media screen and (max-width:768px) {
             .swiper-container {
                 background-size: cover;
                 height: 20vh;
@@ -297,7 +334,24 @@
             .swiper-slide img {
                 height: 20vh;
             }
-           
+
+            #section {
+                height: 6%;
+            }
+
+            #section_2_1 {
+
+                height: 6%;
+            }
+
+            #section_3_1 {
+                height: 6%;
+            }
+
+            #section_4_1 {
+
+                height: 6%;
+            }
         }
     </style>
 </head>
@@ -306,16 +360,16 @@
     <div class="home_pg">
         <div id="box_relative" class="logo">
             <div id="box_absolute" class="logo_bear">
-                <img src="/image/logo.png" alt="bear" width="30%">
+                <img src="/image/logo.png" alt="bear">
                 <!-- <div class="clearfix"></div> 清除浮動-->
             </div>
 
 
             <div class="nav_items">
-                <a href="#section_1"><img src="/image/nav-21.png" title="教學理念" width="10%"></a>
-                <a href="#section_2"><img src="/image/nav-31.png" title="教學影片" width="9%"></a>
-                <a href="#section_3"><img src="/image/nav-23.png" title="課程報名" width="10%"></a>
-                <a href="#section_4"><img src="/image/nav-24.png" title="聯絡我們" width="9%"></a>
+                <a href="#section"><img src="/image/nav-21.png" title="教學理念"></a>
+                <a href="#section_2_1"><img src="/image/nav-31.png" title="教學影片"></a>
+                <a href="#section_3_1"><img src="/image/nav-23.png" title="課程報名"></a>
+                <a href="#section_4_1"><img src="/image/nav-24.png" title="聯絡我們"></a>
             </div>
         </div>
 
@@ -365,6 +419,9 @@
             <div class="animals">
                 <img src="/image/animals.png" alt="animals">
             </div>
+            <div id="section">
+
+            </div>
             <div id="section_1" class="study_b">
                 <h1 class="title">教學理念</h1>
                 <p class="doc">
@@ -372,15 +429,26 @@
                     fuga, impedit porro nulla velit soluta, vero alias eveniet ipsam! Consequuntur mollitia provident
                     quod,
                     adipisci dicta in quibusdam?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime veniam mollitia soluta nulla
+                    dignissimos, rerum reiciendis libero id officiis quae nesciunt quibusdam nam corporis hic magni
+                    explicabo sed? Vel, porro?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellendus, possimus deleniti fugit
+                    quae reiciendis suscipit quidem reprehenderit. Dolores dolor consequuntur reiciendis. Laudantium
+                    amet aut, repudiandae quasi debitis minima sunt?
                 </p>
             </div>
+            <div id="section_2_1">
 
+            </div>
             <div id="section_2" class="youtube">
                 <h1 class="title">教學影片</h1>
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/p_kH1grc2ss" frameborder="0"
                         allow="autoplay; encrypted-media" allowfullscreen>
                     </iframe>
+                </div>
+                <div id="section_3_1">
+
                 </div>
                 <div id="section_3" class="class_pay">
                     <h1 class="title">課程報名</h1>
@@ -389,6 +457,12 @@
                         obcaecati illo natus eaque. Doloribus excepturi, placeat ipsam, voluptatibus ratione maxime ad
                         non
                         tempora libero sequi, fuga et aspernatur?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repellendus, quas eum ullam illum
+                        molestiae corporis necessitatibus id dolore velit iste dolor rerum suscipit vero labore
+                        consequuntur blanditiis voluptatem quae.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, quia fuga. Maxime aliquam,
+                        explicabo, quisquam, ipsa expedita ullam magni illum dolor doloremque perspiciatis quos ratione
+                        amet assumenda mollitia odio excepturi.
                     </p>
                 </div>
                 <!--<div id="section_6" class="book">
@@ -400,14 +474,24 @@
                 <div class="shoop">
                     <a href="https://shopee.tw/cindy1915" title="蝦皮"><img src="/image/shoop.jpg" alt="蝦皮" width="15%"></a>
                 </div>-->
+                <div id="section_4_1">
+
+                </div>
                 <div id="section_4" class="notice">
                     <h1 class="title">聯絡我們</h1>
                     <p class="doc">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, aliquam. Laboriosam,
                         quis impedit, quod sunt nisi, tempora at consequuntur hic amet mollitia ducimus architecto
                         reprehenderit numquam commodi exercitationem unde! Eligendi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi debitis, impedit eaque
+                        tempora recusandae explicabo error quae rerum reprehenderit molestiae sequi nulla. Eveniet eos
+                        nihil neque temporibus molestias! Deserunt, delectus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum voluptate quasi voluptatem
+                        maiores veritatis, eaque sequi expedita iure consequatur reprehenderit officia natus modi rem
+                        eius a quo voluptatum laborum unde!
                     </p>
                 </div>
+               
                 <!--<div id="section_8" class="link_1">
                 <h1 class="title">相關連結</h1>
                 <div class="fb">
@@ -432,6 +516,9 @@
                         <img src="/image/fb.png" alt="FB"></a>
 
                 </div>
+            </div>
+            <div class="footer">
+
             </div>
             <!-- Swiper JS -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
