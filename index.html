@@ -99,6 +99,7 @@
 
         .index {
             margin: 0;
+            padding-top: 6%;
         }
 
 
@@ -109,6 +110,8 @@
 
 
         .logo {
+            position: fixed;
+            top: 0;
             background-color: #3d4e59;
             width: 100%;
 
@@ -127,9 +130,12 @@
         }
 
         #box_relative {
+
             position: relative;
-
-
+            position: fixed;
+            top: 0px;
+            z-index: 100;
+            /*z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。*/
 
         }
 
@@ -138,18 +144,23 @@
             top: 10%;
 
         }
-
         .nav_items {
             padding: 0% 15%;
             text-align: center;
 
         }
-.animals{
-    background-color: #3d4e59;
-    width: 100%;
-    text-align: center;
-    padding: 0%;
-}
+
+        .animals {
+            background-color: #3d4e59;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .animals img {
+            width: 33%;
+        }
+
         .link {
             padding: 15px;
         }
@@ -239,7 +250,18 @@
             outline: none;
             cursor: pointer;
             border-radius: 4px;
-            width: 5%;
+            width: 8%;
+           
+        }
+#myBtn img{
+    width: 1%;
+}
+        #myBtn img {
+            width: 100%;
+        }
+
+        #myFB img {
+            width: 20%;
         }
 
         .swiper-container {
@@ -256,7 +278,9 @@
 
         .swiper-slide img {
             height: 75vh;
+
         }
+
 
         /*手機版*/
         @media (max-width:760px) {
@@ -273,7 +297,7 @@
             .swiper-slide img {
                 height: 20vh;
             }
-
+           
         }
     </style>
 </head>
@@ -288,16 +312,19 @@
 
 
             <div class="nav_items">
-                <a href="#section_1"><img src="/image/nav-21.png" border="0" title="教學理念" width="10%"></a>
-                <a href="#section_2"><img src="/image/nav-31.png" border="0" title="教學影片" width="9%"></a>
-                <a href="#section_3"><img src="/image/nav-23.png" border="0" title="課程報名" width="10%"></a>
-                <a href="#section_4"><img src="/image/nav-24.png" border="0" title="聯絡我們" width="9%"></a>
+                <a href="#section_1"><img src="/image/nav-21.png" title="教學理念" width="10%"></a>
+                <a href="#section_2"><img src="/image/nav-31.png" title="教學影片" width="9%"></a>
+                <a href="#section_3"><img src="/image/nav-23.png" title="課程報名" width="10%"></a>
+                <a href="#section_4"><img src="/image/nav-24.png" title="聯絡我們" width="9%"></a>
             </div>
         </div>
 
         <!-- Swiper輪播 -->
         <div id="main_swiper" class="swiper-container">
             <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/image/36d0d2e77c3fa5d9423797daab1abd81_s.jpg" alt="">
+                </div>
                 <div class="swiper-slide">
                     <img src="/image/5ac63a5f7b26a139a4d4ba5e589dfdf5_m.jpg" alt="">
                 </div>
@@ -335,9 +362,9 @@
             <div class="swiper-button-prev"></div>
         </div>
         <div class="doc_pg">
-                <div class="animals">
-    <img src="/image/animals.png" alt="animals" width="33%">
-                    </div>
+            <div class="animals">
+                <img src="/image/animals.png" alt="animals">
+            </div>
             <div id="section_1" class="study_b">
                 <h1 class="title">教學理念</h1>
                 <p class="doc">
@@ -396,13 +423,13 @@
                 <div class="clearfix"></div> 浮動
             </div>-->
                 <button onclick="topFunction()" id="myBtn" title="Back to top">
-                    <img src="/image/top.png" alt="Go to top" width="100%">
+                    <img src="/image/top.png" alt="Go to top">
 
                 </button>
                 <!--浮動式自訂連結區塊 - HTML-->
                 <div id="MyFB">
                     <a href="https://zh-tw.facebook.com/pages/category/Product-Service/%E7%86%8A%E6%84%9B%E6%B4%8B%E8%A3%81%E7%B7%A8%E7%B9%94-2008721729198092/">
-                        <img src="/image/fb.png" alt="FB" width="20%"></a>
+                        <img src="/image/fb.png" alt="FB"></a>
 
                 </div>
             </div>
