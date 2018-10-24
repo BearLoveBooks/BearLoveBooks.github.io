@@ -241,8 +241,9 @@
             font-size: 150%;
         }
 
-        .fb {
-            float: left;
+        .fb img {
+            width: 20%;
+            
         }
 
         .ig {
@@ -384,9 +385,13 @@
     font-size: 15px;
     padding: 15px;
 }
+.class-item{
+    margin: -20px;
+}
 
-
-
+.play-item{
+    margin: -20px;
+}
 
         /*手機版 螢幕尺寸小於768px時，套用以下css*/
         @media screen and (max-width:768px) {
@@ -506,7 +511,7 @@
                     <div class="nav_items">
                         <a href="#section"><img src="/image/nav-21.png" title="教學理念"></a>
                         <a href="#section_2_1"><img src="/image/nav-31.png" title="教學影片"></a>
-                        <a href="#section_3_1"><img src="/image/nav-23.png" title="課程報名"></a>
+                        <a href="#section_3_1"><img src="/image/nav-23.png" title="課程內容" width="30%"></a>
                         <a href="#section_4_1"><img src="/image/nav-24.png" title="聯絡我們"></a>
                     </div>
 
@@ -604,10 +609,12 @@
                 <br>
                 <br>
                 誠摯的邀請各位爸爸媽媽帶著小朋友一起來我們的教室玩喔！！
-                <ul style="letter-spacing:1px;line-height:25px;font-size:18px;">
-                    <li>「互動」包含親子間、孩子間、家長間及家庭間的互動。</li>
-                    <li>「遊戲」包含共玩、共讀，提供有趣、輕鬆、好玩的遊戲。</li>
-                    <li>「成長」增進親子日語能力。</li>
+                <br>
+                <br>
+                <ul class="play-item"style="letter-spacing:1px;line-height:25px;font-size:18px;">
+                <li>「互動」包含親子間、孩子間、家長間及家庭間的互動。</li>
+                <li>「遊戲」包含共玩、共讀，提供有趣、輕鬆、好玩的遊戲。</li>
+                <li>「成長」增進親子日語能力。</li>
                 </ul>
 
             </p>
@@ -626,18 +633,24 @@
 
             </div>
             <div id="section_3" class="class_pay">
-                <h1 class="title">課程報名</h1>
+                <h1 class="title">課程內容</h1>
                 <p class="doc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda facere eveniet
-                    obcaecati illo natus eaque. Doloribus excepturi, placeat ipsam, voluptatibus ratione maxime ad
-                    non
-                    tempora libero sequi, fuga et aspernatur?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repellendus, quas eum ullam illum
-                    molestiae corporis necessitatibus id dolore velit iste dolor rerum suscipit vero labore
-                    consequuntur blanditiis voluptatem quae.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, quia fuga. Maxime aliquam,
-                    explicabo, quisquam, ipsa expedita ullam magni illum dolor doloremque perspiciatis quos ratione
-                    amet assumenda mollitia odio excepturi.
+                    <ul class="class-item" >
+                        <br>
+                        <br>
+                        <li style="letter-spacing:1px;line-height:25px;font-size:18px;font-weight: bolder;">繪本班</li>
+                        <br>
+                      
+                          <span style="letter-spacing:1px;line-height:25px;font-size:18px;">聽故事 + 美勞 + 童謠律動</span>
+                          <br>
+                          <br>
+                        <li style="letter-spacing:1px;line-height:25px;font-size:18px;font-weight: bolder;">繪本班 + 媽咪日語班</li>
+                        <br>
+                        <span style="letter-spacing:1px;line-height:25px;font-size:18px;">聽故事 + 童謠律動 + 媽咪日語</span>
+                        
+                        
+                    </ul>
+                    
                 </p>
             </div>
             <!--<div id="section_6" class="book">
@@ -654,17 +667,9 @@
             </div>
             <div id="section_4" class="notice">
                 <h1 class="title">聯絡我們</h1>
-                <p class="doc">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, aliquam. Laboriosam,
-                    quis impedit, quod sunt nisi, tempora at consequuntur hic amet mollitia ducimus architecto
-                    reprehenderit numquam commodi exercitationem unde! Eligendi.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi debitis, impedit eaque
-                    tempora recusandae explicabo error quae rerum reprehenderit molestiae sequi nulla. Eveniet eos
-                    nihil neque temporibus molestias! Deserunt, delectus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum voluptate quasi voluptatem
-                    maiores veritatis, eaque sequi expedita iure consequatur reprehenderit officia natus modi rem
-                    eius a quo voluptatum laborum unde!
-                </p>
+                <div class="fb">
+<img src="/image/book-fb.png" alt="FB">
+                </div>
             </div>
 
             <!--<div id="section_8" class="link_1">
