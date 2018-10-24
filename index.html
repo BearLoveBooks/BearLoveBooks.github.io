@@ -109,21 +109,9 @@
         }
 
 
-        .logo {
-            position: fixed;
-            top: 0;
-            background-color: #3d4e59;
-            width: 100%;
-
-        }
 
 
-        .kid {
-            background-color: #d9ebd4;
-            width: 100%;
 
-
-        }
 
         .logo_bear {
             padding: 0% 1%;
@@ -139,7 +127,8 @@
             position: fixed;
             top: 0px;
             z-index: 100;
-            /*z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。*/
+            /*z-index ?性?置元素的堆??序。?有更高堆??序的元素?是??于堆??序?低的元素的前面。*/
+            background-color: #3d4e59;
 
         }
 
@@ -153,6 +142,7 @@
         .nav_items {
             padding: 0% 15%;
             text-align: center;
+
 
         }
 
@@ -315,159 +305,323 @@
             height: 75vh;
 
         }
-.footer{
-    background-color: #3d4e59;
-    width: 100%;
-    height: 10%;
-}
 
-        /*手機版*/
+        .footer {
+            background-color: #3d4e59;
+            width: 100%;
+            height: 10%;
+
+        }
+
+        .mb-navbar {
+            display: none;
+            background-color: #3d4e59;
+            width: 100%;
+            z-index: 1000;
+            position: fixed;
+            top: 0px;
+            z-index: 100;
+        }
+
+        .mb-navbar img {
+            width: 70%;
+        }
+
+
+        .d-flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+        .mobile-nav-toggle {
+            display: none;
+            margin-top: 10px;
+            float: right;
+            border: 1px solid white;
+            padding: 4px 10px;
+            border-radius: 5px;
+
+        }
+
+        .mobile-nav-toggle i {
+            color: white;
+            font-size: 24px;
+        }
+
+        .mobile-navbar {
+            display: none;
+            border-top: 1px solid white;
+            background-color: #333;
+            padding: 15px 0;
+        }
+
+        /*同時有這兩個class的時候*/
+        .mobile-navbar.active {
+            display: none;
+        }
+
+        .mobile-navbar ul {
+            list-style-type: none;
+            padding: 0 40px;
+        }
+
+        .mobile-navbar ul li a {
+            display: block;
+            border-bottom: 1px solid white;
+            padding: 10px 0;
+        }
+
+
+
+        .mobile-navbar a {
+            color: white;
+        }
+
+
+
+
+
+
+        /*手機版 螢幕尺寸小於768px時，套用以下css*/
         @media screen and (max-width:768px) {
+
+
             .swiper-container {
                 background-size: cover;
-                height: 20vh;
+                height: 37vh;
             }
 
             .swiper-slide {
                 text-align: center;
-                height: 20vh;
+                height: 37vh;
             }
 
             .swiper-slide img {
-                height: 20vh;
+                height: 37vh;
             }
 
             #section {
-                height: 6%;
+                height: 8%;
             }
 
             #section_2_1 {
 
-                height: 6%;
+                height: 8%;
             }
 
             #section_3_1 {
-                height: 6%;
+                height: 8%;
             }
 
             #section_4_1 {
 
-                height: 6%;
+                height: 8%;
             }
+
+            .mb-navbar {
+                display: block;
+
+            }
+            .mb-navbar img{
+                height: 50px;
+            }
+
+            .mobile-nav-toggle {
+                border: 0;
+
+                display: block;
+            }
+
+            /*同時有這兩個class的時候*/
+            .mobile-navbar.active {
+                display: block;
+            }
+
+            .mobile-nav-toggle img {
+                width: 15%;
+                z-index: 200;
+                position: fixed;
+                top: 0;
+                right: 0;
+            }
+
+            .swiper-container {
+                background-image: none;
+
+            }
+
+            #myBtn img {
+                display: none;
+            }
+
+            .mobile-navbar {
+                position: fixed;
+                top: 50px;
+                right: 0;
+                z-index: 200;
+                background-color: #3d4e59;
+                width: 100%;
+
+
+
+            }
+
+            .mb-navbar-items {
+                text-align: center;
+            }
+
+            .mobile-navbar.active {
+                display: block;
+            }
+            .animals img {
+            width: 70%;
+        }
         }
     </style>
 </head>
 
 <body class="index">
-    <div class="home_pg">
-        <div id="box_relative" class="logo">
-            <div id="box_absolute" class="logo_bear">
-                <img src="/image/logo.png" alt="bear">
-                <!-- <div class="clearfix"></div> 清除浮動-->
-            </div>
+    <div id="home_pg" class="home_pg">
+        <nav class="logo">
+            <div class="container">
+                <div id="box_relative" class="d-flex">
+
+                    <div id="box_absolute" class="logo_bear">
+                        <img src="/image/logo.png" alt="bear">
+                        <!-- <div class="clearfix"></div> 清除浮動-->
+                    </div>
+                    <div class="nav_items">
+                        <a href="#section"><img src="/image/nav-21.png" title="教學理念"></a>
+                        <a href="#section_2_1"><img src="/image/nav-31.png" title="教學影片"></a>
+                        <a href="#section_3_1"><img src="/image/nav-23.png" title="課程報名"></a>
+                        <a href="#section_4_1"><img src="/image/nav-24.png" title="聯絡我們"></a>
+                    </div>
 
 
-            <div class="nav_items">
-                <a href="#section"><img src="/image/nav-21.png" title="教學理念"></a>
-                <a href="#section_2_1"><img src="/image/nav-31.png" title="教學影片"></a>
-                <a href="#section_3_1"><img src="/image/nav-23.png" title="課程報名"></a>
-                <a href="#section_4_1"><img src="/image/nav-24.png" title="聯絡我們"></a>
+                </div>
             </div>
+        </nav>
+        <nav id="mb-navbar-relative" class="mb-navbar">
+            <!-- 只會在手機板出現 -->
+            <div id="mobile-nav-toggle" class="mobile-nav-toggle">
+                <img src="/image/menu-button-of-three-horizontal-lines.png" alt="">
+
+            </div>
+            <a href="#home_pg"><img id="mb-logo-absolute" src="/image/logo.png" alt="logo"></a>
+
+
+
+        </nav>
+        <div class="mobile-navbar">
+            <ul class="mb-navbar-items">
+                <li class="mobile-navbar-items"><a href="#section" style="text-decoration:none;">教&nbsp;&nbsp;學&nbsp;&nbsp;理&nbsp;&nbsp;念</a></li>
+                <li class="mobile-navbar-items"> <a href="#section_2_1" style="text-decoration:none;">教&nbsp;&nbsp;學&nbsp;&nbsp;影&nbsp;&nbsp;片</a></li>
+
+                <li class="mobile-navbar-items"> <a href="#section_3_1" style="text-decoration:none;">課&nbsp;&nbsp;程&nbsp;&nbsp;報&nbsp;&nbsp;名</a></li>
+                <li class="mobile-navbar-items"> <a href="#section_4_1" style="text-decoration:none;">聯&nbsp;&nbsp;絡&nbsp;&nbsp;我&nbsp;&nbsp;們</a></li>
+            </ul>
         </div>
 
-        <!-- Swiper輪播 -->
-        <div id="main_swiper" class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="/image/36d0d2e77c3fa5d9423797daab1abd81_s.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/image/5ac63a5f7b26a139a4d4ba5e589dfdf5_m.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/image/ANJ77_ehonwomiru20141115105326_TP_V.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/image/0903c7a724e7fc4793431245cf0f6ccb_m.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/image/e31dcb431e2d64b6b62559dba98d67f3_s.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/image/fc31becbe89bad61ec929c40becdeb56_s.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/image/child-2553539_1280.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/image/baby-1261777_1920.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/image/oekaki-2009817_1280.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/image/kid-3659954_1280.jpg" alt="">
-                </div>
 
+    </div>
+    <!-- Swiper輪播 -->
+    <div id="main_swiper" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/image/36d0d2e77c3fa5d9423797daab1abd81_s.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/5ac63a5f7b26a139a4d4ba5e589dfdf5_m.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/ANJ77_ehonwomiru20141115105326_TP_V.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/0903c7a724e7fc4793431245cf0f6ccb_m.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/e31dcb431e2d64b6b62559dba98d67f3_s.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/fc31becbe89bad61ec929c40becdeb56_s.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/child-2553539_1280.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/baby-1261777_1920.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/oekaki-2009817_1280.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/8487fa425d2b6d9231201d3f21fb0735_m.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/kid-3659954_1280.jpg" alt="">
             </div>
 
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
-        <div class="doc_pg">
-            <div class="animals">
-                <img src="/image/animals.png" alt="animals">
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div class="doc_pg">
+        <div class="animals">
+            <img src="/image/animals.png" alt="animals">
+        </div>
+        <div id="section">
+
+        </div>
+        <div id="section_1" class="study_b">
+            <h1 class="title">教學理念</h1>
+            <p class="doc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti pariatur sunt libero
+                fuga, impedit porro nulla velit soluta, vero alias eveniet ipsam! Consequuntur mollitia provident
+                quod,
+                adipisci dicta in quibusdam?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime veniam mollitia soluta nulla
+                dignissimos, rerum reiciendis libero id officiis quae nesciunt quibusdam nam corporis hic magni
+                explicabo sed? Vel, porro?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellendus, possimus deleniti fugit
+                quae reiciendis suscipit quidem reprehenderit. Dolores dolor consequuntur reiciendis. Laudantium
+                amet aut, repudiandae quasi debitis minima sunt?
+            </p>
+        </div>
+        <div id="section_2_1">
+
+        </div>
+        <div id="section_2" class="youtube">
+            <h1 class="title">教學影片</h1>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/p_kH1grc2ss" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
             </div>
-            <div id="section">
+            <div id="section_3_1">
 
             </div>
-            <div id="section_1" class="study_b">
-                <h1 class="title">教學理念</h1>
+            <div id="section_3" class="class_pay">
+                <h1 class="title">課程報名</h1>
                 <p class="doc">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti pariatur sunt libero
-                    fuga, impedit porro nulla velit soluta, vero alias eveniet ipsam! Consequuntur mollitia provident
-                    quod,
-                    adipisci dicta in quibusdam?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime veniam mollitia soluta nulla
-                    dignissimos, rerum reiciendis libero id officiis quae nesciunt quibusdam nam corporis hic magni
-                    explicabo sed? Vel, porro?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellendus, possimus deleniti fugit
-                    quae reiciendis suscipit quidem reprehenderit. Dolores dolor consequuntur reiciendis. Laudantium
-                    amet aut, repudiandae quasi debitis minima sunt?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda facere eveniet
+                    obcaecati illo natus eaque. Doloribus excepturi, placeat ipsam, voluptatibus ratione maxime ad
+                    non
+                    tempora libero sequi, fuga et aspernatur?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repellendus, quas eum ullam illum
+                    molestiae corporis necessitatibus id dolore velit iste dolor rerum suscipit vero labore
+                    consequuntur blanditiis voluptatem quae.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, quia fuga. Maxime aliquam,
+                    explicabo, quisquam, ipsa expedita ullam magni illum dolor doloremque perspiciatis quos ratione
+                    amet assumenda mollitia odio excepturi.
                 </p>
             </div>
-            <div id="section_2_1">
-
-            </div>
-            <div id="section_2" class="youtube">
-                <h1 class="title">教學影片</h1>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/p_kH1grc2ss" frameborder="0"
-                        allow="autoplay; encrypted-media" allowfullscreen>
-                    </iframe>
-                </div>
-                <div id="section_3_1">
-
-                </div>
-                <div id="section_3" class="class_pay">
-                    <h1 class="title">課程報名</h1>
-                    <p class="doc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda facere eveniet
-                        obcaecati illo natus eaque. Doloribus excepturi, placeat ipsam, voluptatibus ratione maxime ad
-                        non
-                        tempora libero sequi, fuga et aspernatur?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repellendus, quas eum ullam illum
-                        molestiae corporis necessitatibus id dolore velit iste dolor rerum suscipit vero labore
-                        consequuntur blanditiis voluptatem quae.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, quia fuga. Maxime aliquam,
-                        explicabo, quisquam, ipsa expedita ullam magni illum dolor doloremque perspiciatis quos ratione
-                        amet assumenda mollitia odio excepturi.
-                    </p>
-                </div>
-                <!--<div id="section_6" class="book">
+            <!--<div id="section_6" class="book">
                 <h1 class="title">書籍訂購</h1>
                 <div class="pchome">
                     <a href="http://seller.pcstore.com.tw/S135534997/" title="pchome"><img src="/image/pchome.jpg" alt="pchome"
@@ -476,25 +630,25 @@
                 <div class="shoop">
                     <a href="https://shopee.tw/cindy1915" title="蝦皮"><img src="/image/shoop.jpg" alt="蝦皮" width="15%"></a>
                 </div>-->
-                <div id="section_4_1">
+            <div id="section_4_1">
 
-                </div>
-                <div id="section_4" class="notice">
-                    <h1 class="title">聯絡我們</h1>
-                    <p class="doc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, aliquam. Laboriosam,
-                        quis impedit, quod sunt nisi, tempora at consequuntur hic amet mollitia ducimus architecto
-                        reprehenderit numquam commodi exercitationem unde! Eligendi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi debitis, impedit eaque
-                        tempora recusandae explicabo error quae rerum reprehenderit molestiae sequi nulla. Eveniet eos
-                        nihil neque temporibus molestias! Deserunt, delectus.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum voluptate quasi voluptatem
-                        maiores veritatis, eaque sequi expedita iure consequatur reprehenderit officia natus modi rem
-                        eius a quo voluptatum laborum unde!
-                    </p>
-                </div>
-               
-                <!--<div id="section_8" class="link_1">
+            </div>
+            <div id="section_4" class="notice">
+                <h1 class="title">聯絡我們</h1>
+                <p class="doc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, aliquam. Laboriosam,
+                    quis impedit, quod sunt nisi, tempora at consequuntur hic amet mollitia ducimus architecto
+                    reprehenderit numquam commodi exercitationem unde! Eligendi.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi debitis, impedit eaque
+                    tempora recusandae explicabo error quae rerum reprehenderit molestiae sequi nulla. Eveniet eos
+                    nihil neque temporibus molestias! Deserunt, delectus.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum voluptate quasi voluptatem
+                    maiores veritatis, eaque sequi expedita iure consequatur reprehenderit officia natus modi rem
+                    eius a quo voluptatum laborum unde!
+                </p>
+            </div>
+
+            <!--<div id="section_8" class="link_1">
                 <h1 class="title">相關連結</h1>
                 <div class="fb">
                     <img src="/image/fb qr.png" alt="FB" width="70%">
@@ -508,59 +662,70 @@
                 </div>
                 <div class="clearfix"></div> 浮動
             </div>-->
-                <button onclick="topFunction()" id="myBtn" title="Back to top">
-                    <img src="/image/top.png" alt="Go to top">
+            <button onclick="topFunction()" id="myBtn" title="Back to top">
+                <img src="/image/top.png" alt="Go to top">
 
-                </button>
-                <!--浮動式自訂連結區塊 - HTML-->
-                <div id="MyFB">
-                    <a href="https://zh-tw.facebook.com/pages/category/Product-Service/%E7%86%8A%E6%84%9B%E6%B4%8B%E8%A3%81%E7%B7%A8%E7%B9%94-2008721729198092/">
-                        <img src="/image/fb.png" alt="FB"></a>
-
-                </div>
-            </div>
-            <div class="footer">
+            </button>
+            <!--浮動式自訂連結區塊 - HTML-->
+            <div id="MyFB">
+                <a href="https://www.facebook.com/%E7%86%8A%E6%84%9B%E7%B9%AA%E6%9C%AC-220202525438384/">
+                    <img src="/image/fb.png" alt="FB"></a>
 
             </div>
-            <!-- Swiper JS -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+        </div>
+        <div class="footer">
 
-            <script>
-                // When the user scrolls down 20px from the top of the document, show the button
-                window.onscroll = function () { scrollFunction() };
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 
-                function scrollFunction() {
-                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                        document.getElementById("myBtn").style.display = "block";
-                    } else {
-                        document.getElementById("myBtn").style.display = "none";
-                    }
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
                 }
+            }
 
-                // When the user clicks on the button, scroll to the top of the document
-                function topFunction() {
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
 
-                //  <!-- Initialize Swiper --> swiper slider
-                var swiper = new Swiper('.swiper-container', {
-                    spaceBetween: 30,
-                    centeredSlides: true,
-                    autoplay: {
-                        delay: 3000,
-                        disableOnInteraction: false,
-                    },
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
-            </script>
+            //  <!-- Initialize Swiper --> swiper slider
+            var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+            //mb-nav轉換
+            var mobileNavToggle = document.querySelector("#mobile-nav-toggle");
+            mobileNavToggle.onclick = function () {
+                document.querySelector(".mobile-navbar").classList.toggle('active');
+            }
+            //mb-nav items後 nav close
+            var mb_navbar_items = document.querySelector(".mb-navbar-items");
+            mb_navbar_items.onclick = function () {
+                document.querySelector(".mobile-navbar").classList.remove('active');
+            }
+
+        </script>
 
 
 </body>
